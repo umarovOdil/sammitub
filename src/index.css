@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Montserrat:wght@400;500;600;700;900&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  width: 100%;
+  background: #000;
+}
+.searchBar{
+  box-shadow: none;
+  border:none;
+  width: 350px;
+  outline: none;
+
+}
+
+.category-btn{
+  display: flex;
+  align-items:center;
+  justify-content: space-evenly;
+  border:none;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 5px 20px;
+  gap: 15px;
+
+  font-size: 14px;
+  font-weight: 600;
+  margin: 10px 5px;
+
+  transition: .1s linear;
+  border-radius:10px;
+  color: white;
+}
+
+.active{
+  background:white !important;
+}
+.active span{
+  color:black !important;
+}
+
+
+
+.category-btn:hover{
+  background: rgba(255, 255, 255, 0.2);
+}
+
+
+
+.menuBtns{
+  width: 100px;
+  height: 80px;
+  border: none;
+  background: none;
+  outline: none;
+  border-radius:5px;
+  font-weight: 600;
+  color: white;
+  transition: .5s linear;
+}
+.menuBtns:hover{
+  color: white;
+  background: linear-gradient(-135deg,rgba(255, 255, 255, 0) 10%, rgba(94, 66, 66, 0.473) 95%);
+}
+
+input{
+  background: transparent;
+  color: rgb(255, 255, 255);
+}
+
+
+::-webkit-scrollbar{
+  width: 0;
+  height: 2px;
+}
+
+::-webkit-scrollbar-thumb
+{
+  background: rgba(255, 255, 255, 0.4);
+  height: 200px;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-track
+{
+  background: transparent;
+}
+
+.react-player{
+  width: 100% !important;
+  height: 77vh !important;
+}
+
+a{
+  text-decoration: none;
+  color: gray;
+}
+
+.logo{
+  font-size: 32px;
+  font-weight: 700;
+  font-family: 'Dancing Script' , sans-serif;
+  color: white;
+}
+
+.logo span{
+  color: red;
+}
+
+.menu{
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+}
+
+@media screen and (max-width: 600px){
+  .searchBar{
+    width: 120px;
+  }
+
+  .react-player{
+    height: 45vh !important;
+  }
+
+  .logo{
+    font-size: 20px;
+  }
+}
